@@ -217,28 +217,6 @@ function afterPjax() {
     });
 
 
-
-    $('.share-button').popover({
-        placement: 'bottom',
-        content: '<a target="_blank" href="http://service.weibo.com/share/share.php?url=' +
-            postHref + "&title=" + postTitle +
-            '"><i  class=" fa share-icon fa-weibo fa-2x"></i></a>' +
-            '<a target="_blank" href="http://widget.renren.com/dialog/share?resourceUrl=' +
-            postHref + "&title=" + postTitle +
-            '"><i class="fa share-icon fa-renren fa-2x"></i></a>' +
-            '<a target="_blank" href="http://twitter.com/share?url=' +
-            postHref +
-            '"><i class="fa share-icon fa-twitter fa-2x"></i></a>' +
-            '<a target="_blank" href="https://plus.google.com/share?url=' +
-            postHref + "&title=" + postTitle +
-            '"><i class="fa share-icon fa-google-plus fa-2x"></i></a>' +
-            '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' +
-            postHref + "&title=" + postTitle +
-            '"><i class="fa fa-facebook-square fa-2x"></i></a>',
-        html: true
-    });
-
-//    Fixed Multi-level-push-menu for PJAX
     $(".mp-pjax a").click(function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -394,8 +372,3 @@ $(document).on({
         setTimeout("$('#comment-box').children().remove();",100);
     },
 });
-
-
-
-
-
