@@ -1080,13 +1080,12 @@ span.ds-thread-count:after {
     display: block;
     border: 1px solid #c6d0da;
     list-style: none;
-    width: 120px;
-    height: 120px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    line-height: 120px;
-    border-radius: 60px;
-    margin-bottom:10px;
-
+    line-height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .tm-nav a:hover{
