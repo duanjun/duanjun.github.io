@@ -356,7 +356,7 @@ div[data-level='1'] a {
     left: 0;
     height: 65px;
     font-size: 16px;
-    z-index: 1;
+    z-index: 10000;
     border-bottom: 1px solid #c6d0da;
 
 }
@@ -450,6 +450,7 @@ ul#toc {
     float: none;
     border: none;
     border-bottom: 1px solid #c6d0da;
+    border-left: 1px solid #c6d0da;
     height: auto;
 }
 
@@ -1060,3 +1061,34 @@ span.ds-thread-count:after {
     display: block;
 }
 
+.tm-hd {
+    background: #5f6f81;
+    color: white;
+    height:65px;
+    line-height:65px;
+    padding-left:30px;
+    font-size:30px;
+}
+.tm-nav {
+    position:absolute;
+    top:100px;
+    left:30px;
+    z-index:2
+}
+.tm-nav a{
+    background-color: #ffffff;
+    display: block;
+    border: 1px solid #c6d0da;
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 60px;
+    margin-bottom:10px;
+
+}
+
+.tm-nav a:hover{
+    background-color: #ffffff;
+}

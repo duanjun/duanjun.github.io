@@ -546,7 +546,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-footer {
     position: relative;
     margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
+    padding: 1rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
 
@@ -876,7 +876,7 @@ pre .chunk {
 .site-footer {
     position: relative;
     margin: 8rem 0 0 0;
-    padding: 4rem 0;
+    padding: 1rem 0;
     border-top: #EBF2F6 1px solid;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
@@ -1064,7 +1064,7 @@ pre .chunk {
     }
 
     #nav-container {
-        display:none;
+        display:block;
     }
     .nexus {
         height: 55px;

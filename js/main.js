@@ -202,9 +202,9 @@ function afterPjax() {
 
 
     //  Mutil-push-menu init
-    new mlPushMenu(document.getElementById('mp-menu'), document.getElementById('trigger'), {
-        type: 'cover'
-    });
+    //new mlPushMenu(document.getElementById('mp-menu'), document.getElementById('trigger'), {
+        //type: 'cover'
+    //});
 
     $('img').each( function() {
         var $img = $(this),
@@ -217,6 +217,9 @@ function afterPjax() {
     });
 
 
+
+
+//    Fixed Multi-level-push-menu for PJAX
     $(".mp-pjax a").click(function (e) {
         e.preventDefault();
         e.stopPropagation();
