@@ -23,7 +23,15 @@ angular.module('tagcloud', [])
                 tags: '=',
                 tagClicked: '&'
             },
-            template: '<canvas id="{{canvasId}}">' + '<ul class="weighted">' + '    <li ng-repeat="tag in tags">' + '        <a class="{{tag.font}} {{tag.color}} {{tag.size}}" data-weight="{{tag.value}}" ng-click="tagClicked({tag:tag})">' + '            {{tag.text}}' + '        </a>' + '    </li>' + '</ul>' + '</canvas>',
+            template: '<canvas id="{{canvasId}}" style="width:100%">'
+                + '<ul class="weighted">'
+                + '    <li ng-repeat="tag in tags">'
+                + '        <a class="{{tag.font}} {{tag.color}} {{tag.size}}" data-weight="{{tag.value}}" ng-click="tagClicked({tag:tag})">'
+                + '            {{tag.text}}'
+                + '        </a>'
+                + '    </li>'
+                + '</ul>'
+                + '</canvas>',
 
             link: function (scope, element) {
                 var canvasId = scope.canvasId = 'canvas' + uniqueCanvasId.next(),
@@ -44,10 +52,13 @@ angular.module('tagcloud', [])
                             TagCanvas.outlineOffset = 1;
                             TagCanvas.outlineMethod = 'block';
                             TagCanvas.maxSpeed = 0.06;
+                            TagCanvas.noTagsMessage = false;
                             TagCanvas.minBrightness = 0.1;
                             TagCanvas.depth = 0.95;
                             TagCanvas.pulsateTo = 0.2;
                             TagCanvas.pulsateTime = 0.75;
+                            TagCanvas.minTags = 100;
+                            TagCanvas.repeatTags = 2;
                             TagCanvas.decel = 0.9;
                             TagCanvas.reverse = true;
                             TagCanvas.hideTags = false;
@@ -55,6 +66,8 @@ angular.module('tagcloud', [])
                             TagCanvas.shadowBlur = 3;
                             TagCanvas.wheelZoom = false;
                             TagCanvas.fadeIn = 800;
+                            //TagCanvas.radiusX = 1.5;
+                            TagCanvas.stretchX = 1.5;
                             try {
                                 TagCanvas.Start(canvasId, null, {
                                     textFont: null,

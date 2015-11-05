@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <title></title>
@@ -8,6 +7,8 @@
             canvas {
                 float: left;
                 margin-bottom: 20px
+                height:100%;
+                width:100%;
             }
 
             ul.weighted {
@@ -78,8 +79,8 @@
         </style>
     </head>
 
-    <body ng-app="myApp">
-        <div style="height: 600px; width:1000px" ng-controller="myController">
+    <body ng-app="myApp" style="height:100%;width:100%; ">
+        <div style="height: 100%; height:600px; width:100%; min-height:700px;" ng-controller="myController">
             <tag-cloud tags="tags" tag-clicked="tagClicked(tag)"></tag-cloud>
         </div>
     </body>
@@ -90,5 +91,4 @@
 <script type="text/javascript" charset="utf-8" src="tagcloud.js"></script>
 <script type="text/javascript" charset="utf-8" src="test.js"></script>
 </body>
-
 </html>

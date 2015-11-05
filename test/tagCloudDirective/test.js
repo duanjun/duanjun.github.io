@@ -39,40 +39,39 @@ angular.module('myApp', ['tagcloud'])
             return Math.round(result);
         }
 
-        $scope.tags = [{
-            text: 'loading...',
-            value: 100
-        }];
+
         var tags = [
-            '1000',
-            'background',
-            'canvas',
-            'chart',
-            'medium',
-            'cloud',
-            'example',
-            'html',
-            'html5',
-            'css3',
-            'javascript',
-            'charts',
-            '1000',
-            'background',
-            'canvas',
-            'chart',
-            'medium',
-            'cloud',
-            'example',
-            'html',
-            'html5',
-            'css3',
-            'javascript',
-            'charts'
+            '25',
+            'pingxiang',
+            'juyuan',
+            'xiaoluling',
+            'duanjun',
+            'duanxiaoyu',
+            'love',
+            'beijing',
+            'changsha',
+            'xiangdong',
+            'lashi',
+            'xi\'an',
+            'huashang',
+            'love',
+            '26',
+            'jiangxi',
+            'beidaihe',
+            'qinhuangdao',
+            'haibian',
+            'richu',
+            'aiqing',
+            'memeda',
+            'laopo',
+            'laogong',
+            'family'
         ];
 
         var sizeArr = ['small', 'large', 'medium', 'huge'];
         var colorArr = ['red', 'green', 'purple'];
         var fontArr = ['Lucida Console', 'Monaco', 'monospace'];
+
 
         $timeout(angular.noop, 2000)
             .then(function () {
@@ -86,6 +85,7 @@ angular.module('myApp', ['tagcloud'])
                     });
                 });
                 $scope.tags = _tags;
+                //$scope.tags = testTags;
             });
 
         $scope.tagClicked = function (tag) {};
