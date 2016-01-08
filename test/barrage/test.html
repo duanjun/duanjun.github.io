@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <div id="test" style="width:800px;height:500px;background:#ffaaaa;border:1px solid #333333;">
+    </div>
+    <script src="barrage.js"></script>
+    <script>
+        var barrage = new Barrage({
+            container: 'test'
+        });
+        barrage.init();
+        for (var i = 0; i < 500; i++) {
+            setTimeout(function () {
+                barrage.addText({ text: "test me !", fillStyle: "#ff0"});
+                barrage.addText({ text: "hello world!", fillStyle: "#fff"});
+                barrage.addText({ text: "just test hahahah good!", fillStyle: "#fcf"});
+            }, 10 * i);
+        }
+    </script>
+</body>
+</html>
