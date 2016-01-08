@@ -79,7 +79,7 @@
         var defaultOptions = {
             'container': 'barrageContainer',
             'rowHeight': 40,
-            'bufferSize': 30,
+            'bufferSize': 20,
             'speed': 4,
             'textPadding': 20
         };
