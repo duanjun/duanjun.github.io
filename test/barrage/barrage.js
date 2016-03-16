@@ -56,10 +56,10 @@
         textNode = extend({
             textAlign: 'start',
             textBaseline: 'top',
-            shadowOffsetX: 0,
-            shadowOffsetY: 0,
-            shadowColor: '#fff',
-            shadowBlur: 2,
+            /*shadowOffsetX: 0,*/
+            //shadowOffsetY: 0,
+            //shadowColor: '#fff',
+            /*shadowBlur: 2,*/
             fillStyle: "#fff",
         }, textNode);
 

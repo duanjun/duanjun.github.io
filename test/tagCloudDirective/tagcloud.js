@@ -61,6 +61,7 @@ angular.module('tagcloud', [])
                             TagCanvas.repeatTags = 2;
                             TagCanvas.decel = 0.9;
                             TagCanvas.reverse = true;
+                            TagCanvas.initial = [0.120, -0.060];
                             TagCanvas.hideTags = false;
                             TagCanvas.shadow = '#ccf';
                             TagCanvas.shadowBlur = 3;
