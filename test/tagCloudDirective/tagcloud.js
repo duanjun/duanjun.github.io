@@ -8,6 +8,7 @@
 /*global define: true, require, $ , angular*/
 
 'use strict';
+var isReady;
 angular.module('tagcloud', [])
     .constant('uniqueCanvasId', {
         current: 0,
@@ -64,7 +65,6 @@ angular.module('tagcloud', [])
                             TagCanvas.initial = [0.120, -0.060];
                             TagCanvas.hideTags = false;
                             TagCanvas.shadow = '#ccf';
-                            TagCanvas.shadowBlur = 3;
                             TagCanvas.wheelZoom = false;
                             TagCanvas.fadeIn = 800;
                             //TagCanvas.radiusX = 1.5;
@@ -77,6 +77,7 @@ angular.module('tagcloud', [])
                                 });
                             } catch (e) {}
                             started = true;
+                            isReady = true;
                         }, 500);
                         starting = true;
                     } else {
